@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* Nav-bar */
+}
+.bg-myRed{
+  background-color: rgb(245, 109, 109);
+  box-shadow: 0px 0px 10px red
+}
+
+/* Cards */
+.players{
+  
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 10px rgb(148, 51, 240);
+  border:1px solid red;
+  border-radius: 2rem;
+  margin: 10%;
+  background: linear-gradient(rgb(85, 9, 207),rgb(111, 135, 238))
+
+}
+
+ .content{
+  padding: 12px;
+  height: 300px;
+}
+
+.page a{
+  /* padding: auto; */
+  margin:10px;
+  top: 1%;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Login in */
+
+.login{
+  height:100vh;
+  /* background:linear-gradient(rgb(255, 207, 207),rgb(207, 207, 243)); */
+  /* background: linear-gradient(0.25turn, #3eaad8, #ebf8e1, #f58e1f); */
+  
+  /* background:url('https://thumbs.dreamstime.com/b/purple-yellow-background-color-gradient-backgrounds-abstract-geometric-triangle-patterns-vector-trendy-line-design-simple-205193226.jpg'); */
+  background:url('https://www.zilliondesigns.com/blog/wp-content/uploads/purple-and-yellow-logos-1280x720.png');
+  background-size: cover;
+  padding-top: 2%;
+  
+}
+
+.login-container{
+  border:"2px solid white";
+  background-color:rgba(0, 0, 0, 0.7) ;
+  border-radius: 5px;
+  margin: 0% 17% 2% 17%;
+  box-shadow: 0px 0px 10px yellow;
+}
+
+.login-head{
+  font-family:   'Lucida Sans', Arial, sans-serif;
+ letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2%;
+ color: black;
+}
+
+.login Form{
+  width: 20%;
+  margin-left: 40%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: 500; 
+}
+
+.login Form input{
+  width: 250px;
+}
+
+/* Sign up */
+.sign-up{
+  color:"white";
+  height:100vh;
+  background:url('https://www.zilliondesigns.com/blog/wp-content/uploads/purple-and-yellow-logos-1280x720.png');
+  background-size: cover;
+  padding-top: 2%;
+}
+
+.signup-head
+{
+  font-family:   'Lucida Sans', Arial, sans-serif;
+ letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2%;
+ color: black;
+}
+.signup-container{
+  border:"2px solid white";
+  background-color:rgba(0, 0, 0, 0.7) ;
+  border-radius: 5px;
+  margin: 0% 17% 2% 17%;
+  box-shadow: 0px 0px 10px yellow;
+}
+
+.sign-up Form
+{
+  width: 20%;
+  margin-left: 40%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: 500;
+}
+
+.sign-up Form input{
+  width:250px
+}
+
+/* .row{
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+  overflow-x: scroll;
+} */
+
