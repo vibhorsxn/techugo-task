@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&display=swap');
+
+.pod h1{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Emblema One', cursive;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 2%;
+    text-overflow: ellipsis;
+    font-weight: 400;
+}
