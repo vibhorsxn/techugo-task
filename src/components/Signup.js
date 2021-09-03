@@ -10,9 +10,9 @@ function Signup() {
   const [password, setPassword] = useState(" ");
 //   const [error,setError]=useState({
 //    setError:"false"
-//  })
-const[emailError,setEmailError]=useState("");
-const[passwordError,setPasswordError]=useState("");
+// //  })
+// const[emailError,setEmailError]=useState("");
+// const[passwordError,setPasswordError]=useState("");
 
   const history =useState();
 
@@ -82,7 +82,7 @@ function  valid() {
             onChange={(e) => setEmail(e.target.value)}
             
             />
-            <p>{emailError}</p>
+            {/* <p>{emailError}</p> */}
             
           <Form.Text className="text-muted">
             We'll never share your email with anyone else.

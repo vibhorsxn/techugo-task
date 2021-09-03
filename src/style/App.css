@@ -74,12 +74,22 @@
   margin-left: 40%;
   display: flex;
   flex-direction: column;
-  color: white;
+  color: black;
   font-weight: 500; 
+
 }
+
 
 .login Form input{
   width: 250px;
+  /* border-radius: 2%; */
+  border:none;
+  outline: none;
+  padding:5px;
+}
+.login Form input:focus{
+  /* border-color: blue; */
+  box-shadow: 0px 0px 10px Green;
 }
 
 /* Sign up */
@@ -130,3 +140,30 @@
   overflow-x: scroll;
 } */
 
+/* Amazon Search Box */
+
+.search-bar{
+    height: 34px;
+    width: 250px;
+    padding: 2%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    line-height: 1.15;
+    color: gray;
+    font-family: Ember;
+}
+
+
+.search-box{
+  margin: 0;
+}
+
+.login-icon{
+  height: 40px;
+  width: 40px;
+  margin-top: 5px;
+  display: flex;
+  
+}

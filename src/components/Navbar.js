@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar,Nav,NavDropdown} from 'react-bootstrap';
+import {Navbar,Nav,NavDropdown,Button,Form,FormControl} from 'react-bootstrap';
 import {Container} from 'react-bootstrap';
 import {Breadcrumb} from 'react-bootstrap';
 import Banner from './Banner';
@@ -9,7 +9,8 @@ import Cast from './Cast';
 import Weather from './Weather';
 import Login from './Login';
 import Signup from './Signup';
-import Dashboard from './Dashboard';
+import Dashboard from './Amazon-music';
+import Podcast from './Podcast';
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,36 +23,66 @@ function navbar(){
 
 <div className="Head">
 <Router> 
-<Navbar bg="myRed" sticky="top" >
+<Navbar bg="dark" sticky="top" >
 
   <Container>
     <Navbar.Brand href="#home">
       
-     <img style={{width:"10%",height:"10%"}}src="https://www.logo.wine/a/logo/Avengers_(comics)/Avengers_(comics)-Symbol-Logo.wine.svg" alt="co-logo"/>
-     Avengers 
-      </Navbar.Brand>
-      <Nav className="page">
+     {/* <img style={{width:"10%",height:"10%"}}src="https://www.logo.wine/a/logo/Avengers_(comics)/Avengers_(comics)-Symbol-Logo.wine.svg" alt="co-logo"/> */}
+     
+     <img style={{width:"40%",height:"10%"}}src="https://d5fx445wy2wpk.cloudfront.net/static/logo.svg" alt="co-logo"/>
+     
+     {/* Avengers  */}
+     <Nav style={{color:"white"}} className="page">
+       
       <Link to="/">Home</Link>
-      {/* <Link to="/users">Users</Link> */}
-      <Link to="/cards">AboutUs</Link>
-      <Link to="/cast">Cast</Link>
-      <Link to="/weather">Weather</Link>
-      <Link to="/login">Login</Link>
-      <Link to="/dashboard">Dashboard</Link>
+      <Link to="/podcast">Poadcast</Link>
+      <Link to="/podcast">Library</Link>
+      </Nav>
+
+      <NavDropdown  style={{color:"white"}} title="">
+      <NavDropdown.Item href="Products/Accesories">Music</NavDropdown.Item>
+      <NavDropdown.Item href="Products/Badges">Podcast</NavDropdown.Item>
+           </NavDropdown> 
+      </Navbar.Brand>
+     
       
+
+      {/* <Link to="/users">Users</Link> */}
+      {/* <Link to="/cards">Podcast</Link> */}
+      {/* <Link to="/cast">Cast</Link> */}
+      {/* <Link to="/weather">Weather</Link> */}
+      {/* <Link to="/login">Login</Link> */}
+      {/* <Link to="/dashboard">Dashboard</Link> */}
+      {/* <img src="" alt="search-bar"/> */}
+
+      {/* DROPDOWN */}
+       
+      
+    <input className="search-bar"  placeholder="Search"/>
+    {/* <img src="https://img.icons8.com/ios-glyphs/30/ffffff/search--v1.png" alt="search-icon"/> */}
+
+    <NavDropdown style={{color:"white",}} title="">
+      
+    
+      <NavDropdown.Item href="Products/Accesories">Vibhor Saxena</NavDropdown.Item>
+      <NavDropdown.Item href="Products/Badges">Your Amazon Music Settings</NavDropdown.Item>
+      <NavDropdown.Item href="Products/Badges">Music Preferences</NavDropdown.Item>
+      <NavDropdown.Item href="Products/Badges">Change Display Language</NavDropdown.Item>
+      <NavDropdown.Item href="Products/Badges">Block Explicit Songs</NavDropdown.Item>
+      <NavDropdown.Item href="Products/Badges">Terms and Conditions</NavDropdown.Item>
+      <NavDropdown.Item href="Products/Badges">Get Help</NavDropdown.Item>
+      <NavDropdown.Item href="Products/Badges">Sign Out</NavDropdown.Item>
+      <NavDropdown.Item href="Products/Badges">Download Desktop App</NavDropdown.Item>
+    
+           </NavDropdown> 
+           <img className="login-icon" src="https://img.icons8.com/ios-filled/50/ffffff/test-account.png" alt="login"/>
 
 
     {/* <Nav.Link href="./Cards.js">AboutUs</Nav.Link> */}
     
-    {/* <NavDropdown title="Prodcuts">
-      <NavDropdown.Item href="Products/Accesories">Accessories</NavDropdown.Item>
-      <NavDropdown.Item href="Products/Badges">Badges</NavDropdown.Item>
-      <NavDropdown.Item href="Products/Fudge">Fudge</NavDropdown.Item>
-      <NavDropdown.Divider/>
-      <NavDropdown.Item href="Products/Merchandise">Merchandise</NavDropdown.Item>
-      
-     </NavDropdown> */} 
-    </Nav>
+    
+    {/* </Nav> */}
 
     
     
@@ -60,15 +91,9 @@ function navbar(){
   
   
 </Navbar>
-<Breadcrumb>
-  <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-  <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
-    Superheros
-  </Breadcrumb.Item>
-  <Breadcrumb.Item active>Characters</Breadcrumb.Item>
-</Breadcrumb> 
-<Switch className="pages">
-      <Route exact path="/"><Banner/></Route>
+
+  <Switch className="pages">
+      <Route exact path="/"><Dashboard/></Route>
       <Route path="/users"> <Users /> </Route>
       <Route path="/cards"> <Cards /> </Route>
       <Route path="/cast"> <Cast /> </Route>
@@ -76,8 +101,10 @@ function navbar(){
       <Route path="/login"> <Login /> </Route>
       <Route path="/signup"> <Signup /> </Route>
       <Route path="/dashboard"> <Dashboard /> </Route>
+      <Route path="/podcast"> <Podcast /> </Route>
+
             
-            </Switch>
+  </Switch>
             </Router>
 
   </div>
